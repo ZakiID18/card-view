@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    background-color: beige;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter';
+  padding: 64px 16px 8px;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.card-img {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  padding: 32px 24px 50px;
+}
+
+span {
+  color: red;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 12pt;
+}
+
+.subtitle p {
+  text-align: justify;
+}
+
+.sub {
+  padding-top: 12px;
+  text-align: center;
+  font-size: 12pt;
+  text-transform: uppercase;
+}
+
+.sub h4 {
+  text-align: center;
+  margin: 0px;
+  font-size: 12pt;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 64px;
+  font-size: 12pt;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 40px 40px;
+  }
+
+  .container {
+    height: 90vh;
+  }
+
+  .content {
+    padding: 100px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image {
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 18pt;
+  }
+
+  .subtitle {
+    text-align: left;
+    font-size: 10pt;
+  }
+
+  .sub-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .sub {
+    text-align: center;
+    font-size: 10pt;
+    padding: 10px;
+  }
+
+  .sub h4 {
+    text-align: center;
+    font-size: 12pt;
+  }
+
+  .about {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+
+  h1 {
+    font-size: 22pt;
+  }
+
+  .subtitle {
+    font-size: 11pt;
+  }
+}
